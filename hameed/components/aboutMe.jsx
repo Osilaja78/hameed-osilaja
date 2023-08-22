@@ -65,7 +65,7 @@ export default function AboutMeComponent() {
             <div className="max-w-[500px] flex flex-col gap-10 pt-10">
                 <div className="about-text-one">
                     <p className="text-[40px]">
-                        Hi, I'm Hameed Osilaja.
+                        Hi, I&apos;m Hameed Osilaja.
                     </p>
                     <p className="text-[30px]">
                         A Creative Developer, Turning Ideas into Digital Reality.
@@ -74,7 +74,7 @@ export default function AboutMeComponent() {
                 </div>
                 <p className="about-text-two">
                     My journey in the world of web development began with a fascination for turning ideas into 
-                    interactive digital experiences. Over the years, I've honed my skills in building solutions 
+                    interactive digital experiences. Over the years, I&apos;ve honed my skills in building solutions 
                     that seamlessly merge creativity with functionality. From translating 
                     design concepts into responsive layouts to architecting robust server-side solutions, 
                     I relish the challenge of creating intuitive, pixel-perfect applications that leave a 
@@ -82,21 +82,21 @@ export default function AboutMeComponent() {
                 </p>
                 <p className="about-text-three">
                     As a problem solver at heart, I thrive on tackling complex challenges and finding 
-                    elegant solutions. Whether it's optimizing database queries for lightning-fast 
-                    performance or incorporating the latest tools and frameworks, I'm committed to pushing 
-                    the boundaries of what's possible.
-                    When I'm not immersed in code, you'll find me exploring the latest trends in tech, experimenting with 
+                    elegant solutions. Whether it&apos;s optimizing database queries for lightning-fast 
+                    performance or incorporating the latest tools and frameworks, I&apos;m committed to pushing 
+                    the boundaries of what&apos;s possible.
+                    When I&apos;m not immersed in code, you&apos;ll find me exploring the latest trends in tech, experimenting with 
                     new libraries, and collaborating with fellow developers to expand my horizons.
                 </p>
                 <p className="about-text-four">
-                    I'm also a firm believer 
+                    I&apos;m also a firm believer 
                     in continuous learning, always seeking out opportunities to enhance my skill set and 
                     stay up-to-date with industry best practices.
-                    Let's bring your digital dreams to life! Whether you're looking to build a cutting-edge 
-                    web application or seeking a dedicated developer to join your team, I'm excited to connect 
+                    Let&apos;s bring your digital dreams to life! Whether you&apos;re looking to build a cutting-edge 
+                    web application or seeking a dedicated developer to join your team, I&apos;m excited to connect 
                     and explore how we can work together.
                 </p>
-                <p className="about-text-four">Feel free to reach out, and let's create something amazing 🤗!</p>
+                <p className="about-text-four">Feel free to reach out, and let&apos;s create something amazing 🤗!</p>
             </div>
         </section>
     )
