@@ -49,7 +49,7 @@ export default function ProjectsPage() {
                 <div className="p-[1px] w-6 bg-white hover:bg-gray-400"></div>
                 <Link href="/"><p>HOME</p></Link>
             </div>
-            <p className="text-center text-[60px] pt-10">PROJECTS</p>
+            <p className="text-center text-[60px] pt-10 font-broken">PROJECTS</p>
             <div className="grid grid-cols-5">
                 <div className="hidden sm:block sm:col-span-2 sm:relative">
                     <div className="fixed max-w-[400px]">

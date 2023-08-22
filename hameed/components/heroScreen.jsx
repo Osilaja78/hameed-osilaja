@@ -31,7 +31,7 @@ export default function HomeScreenComponent() {
 
     return (
         <section className="max-w-[90%] sm:max-w-[70%] m-auto">
-            <div className="parallax-section parallax-top relative text-center text-[60px] sm:text-[110px] mt-10 break-words font-broken">
+            <div className="parallax-section parallax-top relative text-center text-[50px] sm:text-[110px] mt-10 break-words font-broken">
                 <p className="max-w-max m-auto">A&nbsp;
                 <span className="clamp relative -z-1">Creative
                       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 842.14 500">
@@ -48,7 +48,7 @@ export default function HomeScreenComponent() {
                     <Image src={lofiPc} alt="lofi" className="rounded-xl -z-10 hidden md:hidden sm:block w-[240px]"/>
                     <Image src={landscapeOne} alt="lofi" className="rounded-xl -z-10 hidden sm:block w-[240px]"/>
                 </div>
-                <i className="text-gray-300 text-center text-[20px]">&quot;I Love Nature&quot;</i>
+                <i className="text-gray-300 text-center text-[20px] font-mont">&quot;I Love Nature&quot;</i>
             </div>
         </section>
     )

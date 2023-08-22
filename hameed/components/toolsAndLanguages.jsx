@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/all";
+import * as THREE from "three";
 
 
 gsap.registerPlugin(MotionPathPlugin);
@@ -120,7 +121,7 @@ export default function ToolsAndLanguagesComponent() {
             .fromTo('.m1Orb', {scale:0, transformOrigin:'50% 50%'}, {duration:0.8, scale:1.5, ease:'back.out(3)', stagger:0.15, overwrite:'auto'}, 'orbs')
             .fromTo('.m1OrbBlank', {opacity:0}, {duration:0.8, opacity:function(i){return 0.2+i/7}, stagger:0.1, overwrite:'auto'}, 'orbs')
             .fromTo('.m1OrbBlank', {x:function(i){return (620-i/4*380) % window.innerWidth - 500}, transformOrigin:function(i){return -((620-i/4*380) % window.innerWidth - 500)+'px 0px'}, rotation:function(i){return [99,-10,55,110,120][i]}}, {rotation:'+=75', yoyo:true, repeat:-1}, 'orbs')
-        });
+        });    
 
     return (
         <section className="w-[90vw] m-auto">

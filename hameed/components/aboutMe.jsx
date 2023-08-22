@@ -23,32 +23,49 @@ export default function AboutMeComponent() {
                     trigger: about,
                     toggleActions: "restart none none none",
                 }
-            })
-
-            const aboutTextTl = gsap.timeline({
+            });
+            const aboutTextOneTl = gsap.timeline({
                 scrollTrigger: {
-                    trigger: [aboutTextOne, aboutTextTwo, aboutTextThree, aboutTextFour],
+                    trigger: aboutTextOne,
                     toggleActions: "restart none none none",
                 }
-            })
+            });
+            const aboutTextTwoTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: aboutTextTwo,
+                    toggleActions: "restart none none none",
+                }
+            });
+            const aboutTextThreeTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: aboutTextThree,
+                    toggleActions: "restart none none none",
+                }
+            });
+            const aboutTextFourTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: aboutTextFour,
+                    toggleActions: "restart none none none",
+                }
+            });
 
             aboutTl.fromTo(about,
                 { x: -150, autoAlpha: 0},
                 { x: 0, duration: 1.5, autoAlpha: 1, ease: "Power4.easeInOut"}
             );
-            aboutTextTl.fromTo(aboutTextOne,
+            aboutTextOneTl.fromTo(aboutTextOne,
                 { y: 150, autoAlpha: 0 },
                 { y: 0, autoAlpha: 1, duration: 1.3, ease: "Power4.easeInOut"}
             );
-            aboutTextTl.fromTo(aboutTextTwo,
+            aboutTextTwoTl.fromTo(aboutTextTwo,
                 { y: 150, autoAlpha: 0 },
                 { y: 0, autoAlpha: 1, duration: 1.3, ease: "Power4.easeInOut"}
             );
-            aboutTextTl.fromTo(aboutTextThree,
+            aboutTextThreeTl.fromTo(aboutTextThree,
                 { y: 150, autoAlpha: 0 },
                 { y: 0, autoAlpha: 1, duration: 1.3, ease: "Power4.easeInOut"}
             );
-            aboutTextTl.fromTo(aboutTextFour,
+            aboutTextFourTl.fromTo(aboutTextFour,
                 { y: 150, autoAlpha: 0 },
                 { y: 0, autoAlpha: 1, duration: 1.3, ease: "Power4.easeInOut"}
             );
@@ -57,12 +74,12 @@ export default function AboutMeComponent() {
     });
 
     return (
-        <section className="about-all sm:flex justify-between max-w-[80%] sm:max-w-[70%] m-auto my-8">
+        <section className="about-all flex flex-col lg:flex-row justify-between max-w-[80%] sm:max-w-[70%] m-auto my-8">
             <div className="about flex flex-col items-center">
-                <h1 className="text-[50px]">ABOUT ME</h1>
+                <h1 className="text-[40px] sm:text-[50px] font-broken">ABOUT ME</h1>
                 <Image src={me} width={180} alt="me" className="rounded-full"/>
             </div>
-            <div className="max-w-[500px] flex flex-col gap-10 pt-10">
+            <div className="max-w-[500px] m-auto lg:m-0 flex flex-col gap-10 pt-10 font-mont">
                 <div className="about-text-one">
                     <p className="text-[40px] font-broken">
                         Hi, I&apos;m Hameed Osilaja.

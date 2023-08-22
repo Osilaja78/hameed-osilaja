@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'kahlil': ['kahlil', 'sans-serif'],
-        'broken': ['broken', 'sans-serif']
+        'broken': ['broken', 'sans-serif'],
+        'mont': ['montserrat', 'sans-serif']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

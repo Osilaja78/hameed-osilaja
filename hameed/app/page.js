@@ -10,7 +10,6 @@ import AboutMeComponent from '@/components/aboutMe';
 import Link from "next/link";
 import ToolsAndLanguagesComponent from '@/components/toolsAndLanguages';
 import Footer from '@/components/footer/footer';
-import { ScrollTrigger } from 'gsap/all';
 
 
 export default function Home() {
@@ -101,7 +100,7 @@ export default function Home() {
                         <div className="together div13 hidden sm:block"></div>
                     </div>
                     <Image src={close} alt='hamburger menu' className='absolute top-10 left-5 sm:left-32 cursor-pointer' onClick={handleBurgerClick} />
-                    <div className="nav-items pt-32 sm:pt-10 text-[60px] sm:text-[135px]">
+                    <div className="nav-items pt-32 sm:pt-10 text-[60px] sm:text-[135px] font-mont">
                         <ul>
                             <li><Link href="/projects">PROJECTS</Link></li>
                             <li><Link href="https://drive.google.com/file/d/19bG8DFLuFxtmr6sqp05LASWY8aBDRbrE/view?usp=drive_link" target="_blank">RESUME</Link></li>

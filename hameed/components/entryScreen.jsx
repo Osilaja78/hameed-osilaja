@@ -45,7 +45,7 @@ export default function EntryScreenAnimation() {
     }, []);
 
     return (
-        <section className="container final absolute top-0 right-0 left-0 w-[100vw] bg-black z-40 text-[40px] sm:text-[100px]">
+        <section className="container final absolute top-0 right-0 left-0 w-[100vw] bg-black z-40 text-[30px] sm:text-[80px] font-mont">
             <div className="letter H">H</div>
             <div className="letter a">a</div>
             <div className="letter m">m</div>
