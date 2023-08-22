@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'kahlil';
+  src: url("../public/fonts/Kahlil-YzP9L.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Additional styles if needed */
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,6 +36,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* ************************ ENTRY SCREEN ANIMATION STYLE ********************** */
 .container {
   margin: auto;
   display: flex;
@@ -50,7 +61,7 @@ body {
 .letter {
   text-align: center;
   color: black;
-  font-size: 10vmax;
+  /* font-size: 10vmax; */
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -66,34 +77,35 @@ body {
 .container.columns .letter {
   flex-basis: 25%;
 }
-.for, .gsap {
-  font-size: 5vmax;
+.gsap {
+  /* font-size: 5vmax; */
   color: white;
 }
-.for {
-  padding: 2px 1.6vmax;
-  font-weight: 300;
-  display: none;
-}
+
 .gsap {
   padding: 2px 0;
-  font-weight: 600;
   display: none;
 }
-.container.final .for, .container.final .gsap {
+.container.final .gsap {
   display: block;
 }
-.F {
+.H {
   background: rgba(0, 188, 212, 0.7);
 }
-.l {
+.a {
+  background: #F652A0;
+}
+.m {
   background: rgba(40, 150, 255, 0.7);
 }
-.i {
+.e {
   background: rgba(153, 80, 220, 0.7);
 }
-.p {
+.e2 {
   background: rgba(90, 108, 225, 0.7);
+}
+.d {
+  background: #4C5270;
 }
 .container.plain .letter {
   background: transparent;
@@ -108,4 +120,124 @@ body {
   top: 50%;
   transform: translateY(-50%) rotate(2deg);
   left: -6%;
+}
+
+.parallax-top {
+  mix-blend-mode: difference;
+}
+
+/* ******************** DROP DOWN COMPNENT STYLE ****************** */
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 1px;
+  overflow: auto;
+}
+
+.together {
+  background-color: gray;
+  opacity: 0.5;
+  position: inherit;
+  top: -50%;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.nav-items {
+  margin-top: -80px;
+  margin-right: 30px;
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  max-width: max-content;
+  height: 113vh;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.nav-items ul {
+  list-style-type: none;
+  perspective: 150px;
+}
+
+.nav-items ul li {
+  cursor: pointer;
+  transition: transform 2s cubic-bezier(.075,.82,.165,1);
+  transform: rotateY(-10deg) translateZ(0) scale(1);
+  transform-origin: right center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.nav-items ul li:hover {
+  transform: rotateY(-5deg) translateZ(0) scale(1);
+  transition-duration: 1s;
+  color: transparent;
+}
+
+/* *******************   ACORDIONS   ********************** */
+
+.title {
+  font-size: max(2vw, 24px);
+  line-height: 1.1;
+  padding-bottom: .4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.text {
+  font-size: max(1vw, 15px);
+  line-height: 1.4;
+  overflow: hidden;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.accordions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion {
+  background: linear-gradient(200deg, rgb(29, 145, 252) 13.57%, rgb(90, 54, 192) 98.38%);
+  max-width: 550px;
+  padding: 25px 30px 10px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
+}
+
+.accordion:nth-child(2) {
+  background: linear-gradient(200deg, rgb(242, 136, 133) 13.57%, rgb(233, 79, 102) 98.38%);
+}
+
+.accordion:nth-child(3) {
+  background: linear-gradient(200deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
+}
+
+.accordion:nth-child(4) {
+  background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
+}
+
+.spacer {
+  height: 20vh;
+}
+
+@media (max-width: 480px) {
+  .accordion {
+    padding: 15px 20px 8px;
+  }
+  .title {
+    font-size: 20px;
+  }
 }

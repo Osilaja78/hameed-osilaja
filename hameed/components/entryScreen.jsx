@@ -15,11 +15,10 @@ export default function EntryScreenAnimation() {
         iteration = 0;
 
         function nextState() {
-            console.log("Inside next state...");
             if (iteration < 4) {
-                const state = Flip.getState(".letter, .gsap", {props: "color,backgroundColor", simple: true}); // capture current state
+                const state = Flip.getState(".letter, .gsap", {props: "color,backgroundColor", simple: true});
         
-                container.classList.remove(layouts[curLayout]); // remove old class
+                container.classList.remove(layouts[curLayout]);
                 curLayout = (curLayout + 1) % layouts.length;   // increment (loop back to the start if at the end)
                 iteration += 1;
                 container.classList.add(layouts[curLayout]);    // add the new class
@@ -46,14 +45,14 @@ export default function EntryScreenAnimation() {
     }, []);
 
     return (
-        <div className="container final">
-            <div className="letter F">H</div>
-            <div className="letter l">a</div>
-            <div className="letter i">m</div>
-            <div className="letter p">e</div>
-            <div className="letter p">e</div>
-            <div className="letter p">d</div>
-            <div className="gsap">&nbsp;OSILAJA</div>
-        </div>
+        <section className="container final absolute top-0 right-0 left-0 w-[100vw] bg-black z-40 text-[40px] sm:text-[100px]">
+            <div className="letter H">H</div>
+            <div className="letter a">a</div>
+            <div className="letter m">m</div>
+            <div className="letter e">e</div>
+            <div className="letter e2">e</div>
+            <div className="letter d">d</div>
+            <div className="gsap text-[30px] sm:text-[100px] font-[400] sm:font-[600]">&nbsp;OSILAJA</div>
+        </section>
     )
 }
