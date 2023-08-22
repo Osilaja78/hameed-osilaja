@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
-import lofiPc from "../public/images/lofi_pc.jpg";
-import loifMusic from "../public/images/lofi_music.jpg";
-import landscapeOne from "../public/images/landscape_1.jpg";
-import landscapeTwo from "../public/images/landscape_2.jpg";
+import lofiPc from "../public/Images/lofi_pc.jpg";
+import loifMusic from "../public/Images/lofi_music.jpg";
+import landscapeOne from "../public/Images/landscape_1.jpg";
+import landscapeTwo from "../public/Images/landscape_2.jpg";
 import { gsap } from "gsap";
 
 
@@ -22,7 +22,7 @@ export default function HomeScreenComponent() {
         }
         
         window.addEventListener("scroll", function(){
-            parallax(); 
+            parallax();
         });
 
         gsap.fromTo(topDiv, {y: 150, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 1.8, ease: "back.out(1.7)"})
