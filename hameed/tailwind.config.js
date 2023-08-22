@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'kahlil': ['kahlil', 'sans-serif']
+        'kahlil': ['kahlil', 'sans-serif'],
+        'broken': ['broken', 'sans-serif']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

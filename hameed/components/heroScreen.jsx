@@ -17,7 +17,7 @@ export default function HomeScreenComponent() {
         function parallax() {
             var yPos = 0 - window.scrollY/5;
         
-            topDiv.style.top = 1 - yPos / 4 + "%";
+            topDiv.style.top = 1 - yPos / 3.6 + "%";
             bottomDiv.style.top = 10 + yPos / 25 + "%";
         }
         
@@ -31,7 +31,7 @@ export default function HomeScreenComponent() {
 
     return (
         <section className="max-w-[90%] sm:max-w-[70%] m-auto">
-            <div className="parallax-section parallax-top relative text-center text-[60px] sm:text-[110px] mt-10 break-words">
+            <div className="parallax-section parallax-top relative text-center text-[60px] sm:text-[110px] mt-10 break-words font-broken">
                 <p className="max-w-max m-auto">A&nbsp;
                 <span className="clamp relative -z-1">Creative
                       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 842.14 500">
