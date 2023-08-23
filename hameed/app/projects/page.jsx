@@ -40,13 +40,6 @@ export default function ProjectsPage() {
         }, '<')
     });
 
-    useEffect(() => {
-        const screenWidth = window.innerWidth;
-        if (screenWidth < 600) {
-            router.refresh();
-        }
-    }, []);
-
     return (
         <div className="projects-main">
             <div className="flex pt-5 pl-3 sm:pt-0 sm:pl-0 sm:fixed top-20 items-center gap-4 sm:-rotate-90 cursor-pointer text-white hover:text-gray-400">
