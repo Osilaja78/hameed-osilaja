@@ -98,7 +98,7 @@ export default function AboutMeComponent() {
                 <div className="about-text-two">
                     <p className=" opacity-90">
                         My journey in the world of <span className=" font-semibold">web development</span> began with a fascination for turning ideas into 
-                        interactive digital experiences. Over the years, I&apos;ve honed my skills in <span className=" font-semibold">building solutions</span> 
+                        interactive digital experiences. Over the years, I&apos;ve honed my skills in <span className=" font-semibold">building solutions </span> 
                         that seamlessly merge creativity with functionality. From translating 
                         design concepts into <span className=" font-semibold">responsive layouts</span> to <span className=" font-semibold">architecting robust server-side solutions</span>, 
                         I relish the challenge of creating intuitive, pixel-perfect applications that leave a 

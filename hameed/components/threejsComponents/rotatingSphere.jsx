@@ -40,7 +40,7 @@ export default function RotatingSphereComponent() {
     });
 
     return (
-        <Canvas className="bg-black " style={{ width: "100%", height: "70vh"}}>
+        <Canvas className="bg-black" style={{ width: "100%", height: "70vh"}}>
             <OrbitControls enableZoom={false} autoRotate rotateSpeed={6} />
             <ambientLight position={[0, 10, 10]} intensity={0.1}/>
             <directionalLight position={[50, 50, 150]} intensity={2}/>

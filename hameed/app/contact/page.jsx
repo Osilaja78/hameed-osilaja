@@ -12,13 +12,13 @@ export default function ContactPage() {
             </div>
             <h1 className="text-[60px] pt-10 font-broken max-w-max m-auto">CONTACT</h1>
             <div className="max-w-[90%] sm:max-w-[70%] m-auto flex flex-col sm:flex-row justify-between font-mont">
-                <div className="mt-20 max-w-[500px] m-auto">
+                <div className="mt-10 sm:mt-20 max-w-[500px] m-auto">
                     <p>
                         Whether you&apos;re looking to build a cutting-edge 
                         web application or seeking a dedicated developer to join your team, I&apos;m excited to connect 
                         and explore how we can work together.
                     </p>
-                    <div className="mt-10">
+                    <div className="mt-5 sm:mt-10">
                         <p>Email: <Link href="mailto:osilajaabdulhameed@gmail.com" className="underline">osilajaabdulhameed@gmail.com</Link></p>
                         <div className="flex flex-col mt-1">
                             Socials:
