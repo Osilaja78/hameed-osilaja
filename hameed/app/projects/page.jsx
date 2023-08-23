@@ -9,16 +9,19 @@ import dropSwift from "../../public/Images/drop_swift.png";
 import yuriBlog from "../../public/Images/yuri_blog.png";
 import Tag from "@/components/project/projectTags";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 
 export default function ProjectsPage() {
+
+    const router = useRouter();
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
 
         const accordions = document.querySelector(".accordions");
         const accordion = document.querySelectorAll(".accordion");
-        const text = document.querySelectorAll(".text");
+        const screenWidth = window.innerWidth;
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -31,17 +34,18 @@ export default function ProjectsPage() {
             }
         })
 
-        // tl.to(text, {
-        //     height: 0,
-        //     paddingBottom: 0,
-        //     opacity: 0,
-        //     stagger: .2,
-        // })
         tl.to(accordion, {
-            marginBottom: -395,
+            marginBottom: screenWidth > 600 ? -395 : -300,
             stagger: .5,
         }, '<')
-    })
+    });
+
+    useEffect(() => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 600) {
+            router.refresh();
+        }
+    }, []);
 
     return (
         <div className="projects-main">

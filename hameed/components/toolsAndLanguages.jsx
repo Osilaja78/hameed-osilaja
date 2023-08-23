@@ -124,7 +124,7 @@ export default function ToolsAndLanguagesComponent() {
         });    
 
     return (
-        <section className="w-[90vw] m-auto">
+        <section className="w-[90vw] m-auto mt-20">
             <h1 className="text-[40px] text-center font-broken">Tools & Languages.</h1>
             <svg className="main1 h-[60vh] sm:h-[90vh] w-[100%] m-auto cursor-pointer">
                 <defs>

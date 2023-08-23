@@ -13,21 +13,16 @@ import {
 extend({ MeshStandardMaterial, MeshLambertMaterial, AmbientLight, DirectionalLight })
 
 
-export default function SphereComponent() {
+export default function RotatingSphereComponent() {
+
     return (
-        <Canvas className="bg-black ml-20" style={{ width: "100%", height: "70vh"}}>
-            <OrbitControls enableZoom={false} autoRotate rotateSpeed={5}/>
-            <ambientLight position={[0, 10, 10]} intensity={0.5}/>
+        <Canvas className="bg-black " style={{ width: "100%", height: "70vh"}}>
+            <OrbitControls enableZoom={false} autoRotate rotateSpeed={6} />
+            <ambientLight position={[0, 10, 10]} intensity={0.1}/>
             <directionalLight position={[50, 50, 150]} intensity={2}/>
             <Suspense fallback={null}>
-                <Sphere visible args={[1, 100, 200]} scale={2}>
-                    <MeshDistortMaterial 
-                        color="#8352fd"
-                        attach="material"
-                        distort={0.5}
-                        speed={2}
-                        roughness={0}
-                    />
+                <Sphere visible args={[1, 100, 200]} scale={window.innerWidth > 600 ? 2 : 1.5}>
+                    <meshLambertMaterial color="#cd3636"/>
                 </Sphere>
             </Suspense>
         </Canvas>

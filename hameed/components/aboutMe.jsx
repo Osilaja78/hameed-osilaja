@@ -5,6 +5,7 @@ import Image from "next/image";
 import me from "../public/me.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import ArrowRight from "../public/arrowRight.svg";
 
 
 export default function AboutMeComponent() {
@@ -87,33 +88,49 @@ export default function AboutMeComponent() {
                     <p className="text-[30px]">
                         A Creative Developer, Turning Ideas into Digital Reality.
                     </p>
-                    <p className="mt-10"><Link href="/projects" className="hover:opacity-50 cursor-pointer">Explore my work -</Link></p>
+                    <p className="mt-10">
+                        <Link href="/projects" className="hover:opacity-50 cursor-pointer text-[20px] font-medium flex items-center gap-1 hover:gap-2">
+                            Explore my work 
+                            <Image src={ArrowRight} alt="arrow-right" />
+                        </Link>
+                    </p>
                 </div>
-                <p className="about-text-two">
-                    My journey in the world of web development began with a fascination for turning ideas into 
-                    interactive digital experiences. Over the years, I&apos;ve honed my skills in building solutions 
-                    that seamlessly merge creativity with functionality. From translating 
-                    design concepts into responsive layouts to architecting robust server-side solutions, 
-                    I relish the challenge of creating intuitive, pixel-perfect applications that leave a 
-                    lasting impact.
-                </p>
-                <p className="about-text-three">
-                    As a problem solver at heart, I thrive on tackling complex challenges and finding 
-                    elegant solutions. Whether it&apos;s optimizing database queries for lightning-fast 
-                    performance or incorporating the latest tools and frameworks, I&apos;m committed to pushing 
-                    the boundaries of what&apos;s possible.
-                    When I&apos;m not immersed in code, you&apos;ll find me exploring the latest trends in tech, experimenting with 
-                    new libraries, and collaborating with fellow developers to expand my horizons.
-                </p>
-                <p className="about-text-four">
-                    I&apos;m also a firm believer 
-                    in continuous learning, always seeking out opportunities to enhance my skill set and 
-                    stay up-to-date with industry best practices.
-                    Let&apos;s bring your digital dreams to life! Whether you&apos;re looking to build a cutting-edge 
-                    web application or seeking a dedicated developer to join your team, I&apos;m excited to connect 
-                    and explore how we can work together.
-                </p>
-                <p className="about-text-four">Feel free to reach out, and let&apos;s create something amazing 🤗!</p>
+                <div className="about-text-two">
+                    <p className=" opacity-90">
+                        My journey in the world of <span className=" font-semibold">web development</span> began with a fascination for turning ideas into 
+                        interactive digital experiences. Over the years, I&apos;ve honed my skills in <span className=" font-semibold">building solutions</span> 
+                        that seamlessly merge creativity with functionality. From translating 
+                        design concepts into <span className=" font-semibold">responsive layouts</span> to <span className=" font-semibold">architecting robust server-side solutions</span>, 
+                        I relish the challenge of creating intuitive, pixel-perfect applications that leave a 
+                        <span className=" font-semibold"> lasting impact</span>.
+                    </p>
+                </div>
+                <div className="about-text-three">
+                    <p className="opacity-90">
+                        As a <span className=" font-semibold">problem solver</span> at heart, I thrive on tackling <span className=" font-semibold">complex challenges</span> and finding 
+                        elegant solutions. Whether it&apos;s optimizing <span className=" font-semibold">database queries</span> for lightning-fast 
+                        performance or incorporating the latest tools and frameworks, I&apos;m committed to pushing 
+                        the boundaries of what&apos;s possible.
+                        When I&apos;m not immersed in code, you&apos;ll find me exploring the <span className=" font-semibold">latest trends in tech</span>, experimenting with 
+                        new libraries, and <span className=" font-semibold">collaborating</span> with fellow developers to expand my horizons.
+                    </p>
+                </div>
+                <div className="about-text-four">
+                    <p className="opacity-90">
+                        I&apos;m also a firm believer 
+                        in <span className=" font-semibold">continuous learning</span>, always seeking out opportunities to enhance my skill set and 
+                        stay <span className=" font-semibold">up-to-date</span> with industry best practices.
+                        Let&apos;s bring your digital dreams to life!
+                    </p>
+                </div>
+                <div className="about-text-four">
+                    <p>
+                        Feel free to reach out, and let&apos;s create something amazing 🤗!
+                    </p>
+                    <Link href="mailto:osilajaabdulhameed@gmail.com">
+                        <button className="border-2 white rounded-full p-3 mt-6 hover:bg-white transition duration-200 ease-in-out hover:text-black">CONTACT</button>
+                    </Link>
+                </div>
             </div>
         </section>
     )
