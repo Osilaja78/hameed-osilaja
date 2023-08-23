@@ -1,5 +1,5 @@
 "use client"
-import React, {Suspense, useEffect} from "react";
+import React, {Suspense, useEffect, useState} from "react";
 import { Canvas } from "@react-three/fiber";
 import { extend } from '@react-three/fiber';
 import { Sphere, MeshDistortMaterial } from "@react-three/drei";
