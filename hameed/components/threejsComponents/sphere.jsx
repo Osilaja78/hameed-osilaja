@@ -22,9 +22,9 @@ export default function SphereComponent() {
             <Suspense fallback={null}>
                 <Sphere visible args={[1, 100, 200]} scale={2}>
                     <MeshDistortMaterial 
-                        color="#8352fd"
+                        color="#7e22ce"
                         attach="material"
-                        distort={0.5}
+                        distort={0.2}
                         speed={2}
                         roughness={0}
                     />

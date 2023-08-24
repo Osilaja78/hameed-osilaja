@@ -7,7 +7,6 @@ import { horizontalLoop } from "@/utils/gsapHelpers";
 export default function InfifityScrollingText() {
 
     useEffect(() => {
-        console.clear();
         gsap.utils.toArray(".scroll_text_all").forEach((line, i) => {
             const speed = 2;
           
@@ -27,7 +26,7 @@ export default function InfifityScrollingText() {
 
     return (
         <div className="flex overflow-hidden my-20">
-            <div className="scroll_text_all flex items-center align-middle flex-nowrap gap-5 text-[20px] font-mont w-[100%]">
+            <div className="scroll_text_all relative flex items-center flex-nowrap gap-5 text-[20px] font-mont min-w-max">
                 <p className="border rounded-full p-3 min-w-max">Freelance</p>
                 <p className="border rounded-full p-3 min-w-max">Frontend Development</p>
                 <p className="border rounded-full p-3 min-w-max">Startups</p>

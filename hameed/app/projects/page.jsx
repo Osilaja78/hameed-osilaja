@@ -9,15 +9,13 @@ import dropSwift from "../../public/Images/drop_swift.png";
 import yuriBlog from "../../public/Images/yuri_blog.png";
 import Tag from "@/components/project/projectTags";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 
 export default function ProjectsPage() {
 
-    const router = useRouter();
+    gsap.registerPlugin(ScrollTrigger)
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
 
         const accordions = document.querySelector(".accordions");
         const accordion = document.querySelectorAll(".accordion");

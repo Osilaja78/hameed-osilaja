@@ -27,12 +27,16 @@ export default function Home() {
         return () => clearTimeout(animationTimer);
       }, []);
 
-    let container, navItems
+    let container, navItems;
     useEffect(() => {
         container = document.querySelectorAll(".together");
         navItems = document.querySelector(".nav-items");
+    
+        const mainDiv = document.querySelector(".main");
 
-        document.body.style.position = navOpen ? 'fixed' : '';
+        if (mainDiv) {
+            mainDiv.style.overflowY = navOpen ? 'hidden' : '';
+        }
 
         if (navOpen === true) {
             gsap.fromTo(
@@ -81,10 +85,10 @@ export default function Home() {
     }
 
     return (
-        <main>
+        <main className="main">
             <EntryScreenAnimation />
-            {navCloseRunning === true ?
-                <div className='fixed z-10 w-[100%] sm:w-[98.8vw] bg-black bg-opacity-80 backdrop-blur-sm'>
+            {navCloseRunning === true &&
+                <div className='fixed z-10 w-[100%] sm:w-[100vw] bg-black bg-opacity-80 backdrop-blur-sm'>
                     <div className="wrapper">
                         <div className="together div2"></div>
                         <div className="together div1"></div>
@@ -103,15 +107,16 @@ export default function Home() {
                     <Image src={close} onClick={handleBurgerClick} alt='hamburger menu' className='absolute top-10 left-5 sm:left-32 cursor-pointer z-30' />
                     <div className="nav-items pt-40 sm:pt-10 text-[60px] sm:text-[135px] font-mont">
                         <ul>
-                            <li><Link href="/projects">PROJECTS</Link></li>
+                            <li><Link href={"/projects"}>PROJECTS</Link></li>
                             <li><Link href="https://drive.google.com/file/d/19bG8DFLuFxtmr6sqp05LASWY8aBDRbrE/view?usp=drive_link" target="_blank">RESUME</Link></li>
                             <li><Link href="https://dev.to/osilaja78" target="_blank">BLOG</Link></li>
                             <li><Link href="/contact">CONTACT</Link></li>
                         </ul>
                     </div>
                 </div>
-            : ''}
-            {animationDone && (<div className='max-w-[98vw]'>
+            }
+            {animationDone && 
+            (<div className="max-w-[100vw]">
                 <div className="z-10 w-full items-center justify-between font-mono lg:flex px-10 sm:px-24 py-10">
                     <div className="flex items-center justify-between sm:w-[60%] m-auto border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static rounded-3xl border bg-gray-200 py-2 px-4 lg:dark:bg-zinc-800/30">
                     <p className="text-20px font-kahlil text-[30px]">Hameed</p>
@@ -120,9 +125,9 @@ export default function Home() {
                 </div>
                 <HomeScreenComponent />
                 <AboutMeComponent />
-                <InfifityScrollingText />
+                {navOpen === false && <InfifityScrollingText />}
                 <ToolsAndLanguagesComponent />
-                <section className="max-w-[300px] text-center m-auto font-mont  opacity-70">
+                <section className="max-w-[300px] text-center m-auto font-mont opacity-70">
                     <p className="text-[15px]">
                         Coded in <span className="font-semibold">Visual Studio Code</span>, loosely crafted on <span className="font-semibold">Paper </span>
                         &#40;I&apos;m no designer&#33;&#41;. Built with <span className="font-semibold">Next.js</span>, <span className="font-semibold">Tailwind CSS</span>,
