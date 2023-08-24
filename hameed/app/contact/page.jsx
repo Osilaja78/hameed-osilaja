@@ -10,7 +10,7 @@ export default function ContactPage() {
                 <div className="p-[1px] w-6 bg-white hover:bg-gray-400"></div>
                 <Link href="/"><p>HOME</p></Link>
             </div>
-            <h1 className="text-[60px] pt-10 font-broken max-w-max m-auto">CONTACT</h1>
+            <h1 className="text-[40px] sm:text-[60px] pt-10 font-broken max-w-max m-auto">CONTACT</h1>
             <div className="max-w-[90%] sm:max-w-[70%] m-auto flex flex-col sm:flex-row justify-between font-mont">
                 <div className="mt-10 sm:mt-20 max-w-[500px] m-auto">
                     <p>
@@ -24,15 +24,15 @@ export default function ContactPage() {
                             Socials:
                             <div className="flex items-center gap-3">
                                 <div className="p-[1px] w-6 bg-white hover:bg-gray-400"></div>
-                                <Link href="https://twitter.com/HameedOsilaja" className="underline"> TW/X </Link>
+                                <Link href="https://twitter.com/HameedOsilaja" target="_blank" className="underline"> TW/X </Link>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="p-[1px] w-6 bg-white hover:bg-gray-400"></div>
-                                <Link href="https://twitter.com/HameedOsilaja" className="underline"> IN </Link>
+                                <Link href="https://www.linkedin.com/in/abdul-hameed-osilaja-85041823a" target="_blank" className="underline"> IN </Link>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="p-[1px] w-6 bg-white hover:bg-gray-400"></div>
-                                <Link href="https://github.com/Osilaja78" className="underline"> GH </Link>
+                                <Link href="https://github.com/Osilaja78" target="_blank" className="underline"> GH </Link>
                             </div>
                         </div>
                     </div>

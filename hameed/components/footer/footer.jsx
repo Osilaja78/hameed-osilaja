@@ -13,7 +13,7 @@ export default function Footer() {
             {/* <h1 className="first-letter:text-4xl first-letter:text-red-700">FOOTER</h1> */}
             <div className="flex gap-5 max-w-max m-auto items-center mt-4">
                 <Link href="https://www.github.com/Osilaja78" target="_blank"><Image src={ghIcon} alt="github" /></Link>
-                <Link href="https://www.github.com/Osilaja78" target="_blank"><Image src={linkedIn} alt="github" /></Link>
+                <Link href="https://www.linkedin.com/in/abdul-hameed-osilaja-85041823a" target="_blank"><Image src={linkedIn} alt="github" /></Link>
                 <Link href="https://twitter.com/HameedOsilaja" target="_blank"><Image src={twitter} alt="twitter" className=" -ml-2" /></Link>
             </div>
             <div className="max-w-max m-auto mt-2">

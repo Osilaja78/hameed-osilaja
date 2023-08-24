@@ -82,7 +82,7 @@ export default function AboutMeComponent() {
             </div>
             <div className="max-w-[500px] m-auto lg:m-0 flex flex-col gap-10 pt-10 font-mont">
                 <div className="about-text-one">
-                    <p className="text-[40px] font-broken">
+                    <p className="text-[30px] sm:text-[40px] font-broken">
                         Hi, I&apos;m Hameed Osilaja.
                     </p>
                     <p className="text-[30px]">

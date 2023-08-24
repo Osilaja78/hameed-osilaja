@@ -35,7 +35,7 @@ export default function ProjectsPage() {
         })
 
         tl.to(accordion, {
-            marginBottom: screenWidth > 600 ? -395 : -300,
+            marginBottom: screenWidth > 600 ? -395 : -335,
             stagger: .5,
         }, '<')
     });
@@ -46,12 +46,11 @@ export default function ProjectsPage() {
                 <div className="p-[1px] w-6 bg-white hover:bg-gray-400"></div>
                 <Link href="/"><p>HOME</p></Link>
             </div>
-            <p className="text-center text-[60px] pt-10 font-broken">PROJECTS</p>
+            <p className="text-center text-[40px] sm:text-[60px] pt-10 font-broken">PROJECTS</p>
             <div className="grid grid-cols-5">
                 <div className="hidden sm:block sm:col-span-2 sm:relative">
                     <div className="fixed max-w-[400px]">
                         <SphereComponent />
-                        {/* <div className="p-32 bg-white"></div> */}
                     </div>
                 </div>
                 <div className="col-span-5 sm:col-span-3">

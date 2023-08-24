@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Hamburger from '../public/hamburger.svg';
 import close from "../public/close.svg";
 import HomeScreenComponent from '@/components/heroScreen';
-import { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import { useState, useEffect} from 'react';
 import { gsap } from 'gsap';
 import AboutMeComponent from '@/components/aboutMe';
 import Link from "next/link";
@@ -100,8 +100,8 @@ export default function Home() {
                         <div className="together div12 hidden sm:block"></div>
                         <div className="together div13 hidden sm:block"></div>
                     </div>
-                    <Image src={close} onClick={handleBurgerClick} alt='hamburger menu' className='absolute top-10 left-5 sm:left-32 cursor-pointer' />
-                    <div className="nav-items pt-32 sm:pt-10 text-[60px] sm:text-[135px] font-mont">
+                    <Image src={close} onClick={handleBurgerClick} alt='hamburger menu' className='absolute top-10 left-5 sm:left-32 cursor-pointer z-30' />
+                    <div className="nav-items pt-40 sm:pt-10 text-[60px] sm:text-[135px] font-mont">
                         <ul>
                             <li><Link href="/projects">PROJECTS</Link></li>
                             <li><Link href="https://drive.google.com/file/d/19bG8DFLuFxtmr6sqp05LASWY8aBDRbrE/view?usp=drive_link" target="_blank">RESUME</Link></li>
@@ -111,17 +111,24 @@ export default function Home() {
                     </div>
                 </div>
             : ''}
-            {animationDone && (<div>
+            {animationDone && (<div className='max-w-[98vw]'>
                 <div className="z-10 w-full items-center justify-between font-mono lg:flex px-10 sm:px-24 py-10">
                     <div className="flex items-center justify-between sm:w-[60%] m-auto border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static rounded-3xl border bg-gray-200 py-2 px-4 lg:dark:bg-zinc-800/30">
                     <p className="text-20px font-kahlil text-[30px]">Hameed</p>
-                    <Image src={Hamburger} alt='hamburger menu' onClick={handleBurgerClick} />
+                    <Image src={Hamburger} alt='hamburger menu' onClick={handleBurgerClick} className="cursor-pointer" />
                     </div>
                 </div>
                 <HomeScreenComponent />
                 <AboutMeComponent />
                 <InfifityScrollingText />
                 <ToolsAndLanguagesComponent />
+                <section className="max-w-[300px] text-center m-auto font-mont  opacity-70">
+                    <p className="text-[15px]">
+                        Coded in <span className="font-semibold">Visual Studio Code</span>, loosely crafted on <span className="font-semibold">Paper </span>
+                        &#40;I&apos;m no designer&#33;&#41;. Built with <span className="font-semibold">Next.js</span>, <span className="font-semibold">Tailwind CSS</span>,
+                        <span className="font-semibold"> GSAP</span>, and <span className="font-semibold">Three.js</span>. Deployed with <span className="font-semibold">Vercel</span>.
+                    </p>
+                </section>
                 <Footer />
             </div>)}
         </main>

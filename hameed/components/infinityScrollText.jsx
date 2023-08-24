@@ -28,7 +28,7 @@ export default function InfifityScrollingText() {
     return (
         <div className="flex overflow-hidden my-20">
             <div className="scroll_text_all flex items-center align-middle flex-nowrap gap-5 text-[20px] font-mont w-[100%]">
-                <p className="border rounded-full p-3 min-w-max ml-5">Startups</p>
+                <p className="border rounded-full p-3 min-w-max">Freelance</p>
                 <p className="border rounded-full p-3 min-w-max">Frontend Development</p>
                 <p className="border rounded-full p-3 min-w-max">Startups</p>
                 <p className="border rounded-full p-3 min-w-max">Fullstack Development</p>
@@ -38,6 +38,7 @@ export default function InfifityScrollingText() {
                 <p className="border rounded-full p-3 min-w-max">Backend Development</p>
                 <p className="border rounded-full p-3 min-w-max">Mentorship</p>
                 <p className="border rounded-full p-3 min-w-max">Technical Writing</p>
+                <p className="p-1"></p>
             </div>
         </div>
     )
