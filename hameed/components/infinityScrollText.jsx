@@ -25,7 +25,7 @@ export default function InfifityScrollingText() {
     });
 
     return (
-        <div className="flex overflow-hidden my-20">
+        <div className="flex relative items-center overflow-hidden my-20">
             <div className="scroll_text_all relative flex items-center flex-nowrap gap-5 text-[20px] font-mont min-w-max">
                 <p className="border rounded-full p-3 min-w-max">Freelance</p>
                 <p className="border rounded-full p-3 min-w-max">Frontend Development</p>

@@ -82,9 +82,21 @@ export default function ToolsAndLanguagesComponent() {
                 end: 1.65
             }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
 
+            .fromTo('.orb3f',  {xPercent:-50, yPercent:-25},{motionPath:{
+                path: function(){return MotionPathPlugin.convertToPath( '.c1_line3',false )[0] },
+                start: 1.39,
+                end: 1.55
+            }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
+
             .fromTo('.orb3c',  {xPercent:-45, yPercent:-15},{motionPath:{
                 path: function(){return MotionPathPlugin.convertToPath( '.c1_line3',false )[0] },
                 start: 0.65,
+                end: 1
+            }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
+
+            .fromTo('.orb3e',  {xPercent:-45, yPercent:-15},{motionPath:{
+                path: function(){return MotionPathPlugin.convertToPath( '.c1_line3',false )[0] },
+                start: 0.75,
                 end: 1
             }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
 
@@ -116,6 +128,12 @@ export default function ToolsAndLanguagesComponent() {
                 path: function(){return MotionPathPlugin.convertToPath( '.c1_line4',false )[0] },
                 start: 1.26,
                 end: 1.6
+            }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
+
+            .fromTo('.orb4e',  {xPercent:-50, yPercent:-25},{motionPath:{
+                path: function(){return MotionPathPlugin.convertToPath( '.c1_line4',false )[0] },
+                start: 1.34,
+                end: 1.46
             }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
 
             .fromTo('.m1Orb', {scale:0, transformOrigin:'50% 50%'}, {duration:0.8, scale:1.5, ease:'back.out(3)', stagger:0.15, overwrite:'auto'}, 'orbs')
@@ -154,6 +172,10 @@ export default function ToolsAndLanguagesComponent() {
                         <g className="m1Orb orb4">
                             <image href="/Icons/html5.svg" alt="html" />
                         </g>
+
+                        <g className="m1Orb orb4e">
+                            <image href="/Icons/nginx.svg" alt="html" />
+                        </g>
                     </g>
                     <g className="m1_cGroup">
                         <circle className="m1OrbBlank" cx="0" cy="50" r="25" fill="#983334" />
@@ -168,8 +190,16 @@ export default function ToolsAndLanguagesComponent() {
                             <image href="/Icons/django.svg" alt="django"/>
                         </g>
 
+                        <g className="m1Orb orb3e">
+                            <image href="/Icons/nextjs.svg" alt="python"/>
+                        </g>
+
                         <g className="m1Orb orb3b">
                             <image href="/Icons/react.svg" alt="react" />
+                        </g>
+
+                        <g className="m1Orb orb3f">
+                            <image href="/Icons/css3Icon.svg" alt="react" />
                         </g>
 
                         <g className="m1Orb orb3">
