@@ -125,7 +125,7 @@ export default function Home() {
                 </div>
                 <HomeScreenComponent />
                 <AboutMeComponent />
-                {navOpen === false && <InfifityScrollingText />}
+                {navOpen === false && navCloseRunning === false ? <InfifityScrollingText /> : ''}
                 <ToolsAndLanguagesComponent />
                 <section className="max-w-[300px] text-center m-auto font-mont opacity-70">
                     <p className="text-[15px]">

@@ -96,8 +96,8 @@ export default function ToolsAndLanguagesComponent() {
 
             .fromTo('.orb3e',  {xPercent:-45, yPercent:-15},{motionPath:{
                 path: function(){return MotionPathPlugin.convertToPath( '.c1_line3',false )[0] },
-                start: 0.75,
-                end: 1
+                start: 0.79,
+                end: 1.1
             }, ease:'none', yoyo:true, repeat:-1}, 'orbs')
 
             .fromTo('.orb3d',  {xPercent:-45, yPercent:-15},{motionPath:{
@@ -230,6 +230,12 @@ export default function ToolsAndLanguagesComponent() {
                     </g>
                 </g>
             </svg>
+            <p className="flex gap-5 max-w-[80%] m-auto">
+                <i>HTML</i>
+                <i>CSS</i>
+                <i>Jsvascript</i>
+                <i>Python</i>
+            </p>
         </section>
     )
 }
