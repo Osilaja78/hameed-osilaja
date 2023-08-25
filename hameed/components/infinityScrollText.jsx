@@ -8,7 +8,8 @@ export default function InfifityScrollingText() {
 
     useEffect(() => {
         gsap.utils.toArray(".scroll_text_all").forEach((line, i) => {
-            const speed = 2;
+            const screenWidth = window.innerWidth;
+            const speed = screenWidth > 600 ? 2 : 1;
           
             const links = line.querySelectorAll("p");
             const tl = horizontalLoop(links, { speed: speed, reversed: true, repeat: -1 });

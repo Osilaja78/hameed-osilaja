@@ -16,7 +16,7 @@ export default function Footer() {
                 <Link href="https://www.linkedin.com/in/abdul-hameed-osilaja-85041823a" target="_blank"><Image src={linkedIn} alt="github" /></Link>
                 <Link href="https://twitter.com/HameedOsilaja" target="_blank"><Image src={twitter} alt="twitter" className=" -ml-2" /></Link>
             </div>
-            <div className="max-w-max m-auto mt-2">
+            <div className="max-w-max m-auto mt-2 font-mont">
                 <p>&copy; 2023 | 🧡 Hameed Osilaja</p>
             </div>
         </section>

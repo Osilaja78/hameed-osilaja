@@ -7,6 +7,7 @@ import ProjectsComponent from "@/components/project/projectComponent";
 import mathEase from "../../public/Images/math_ease.png";
 import dropSwift from "../../public/Images/drop_swift.png";
 import yuriBlog from "../../public/Images/yuri_blog.png";
+import portfolioV1 from "../../public/Images/portfolio_v1.png";
 import Tag from "@/components/project/projectTags";
 import Link from "next/link";
 
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
                 <div className="col-span-5 sm:col-span-3">
                     <div id="content h-[80vh] overflow-y-scroll">
                         <div className="spacer"></div>
-                        <div className="accordions mx-10 sm:mx-0">
+                        <div className="accordions mx-7 sm:mx-0">
                             <div className="accordion">
                                 <ProjectsComponent
                                     name="MathEase"
@@ -91,6 +92,7 @@ export default function ProjectsPage() {
                                 <ProjectsComponent
                                     name="YuriBlog"
                                     img={yuriBlog}
+                                    ghUrl="https://github.com/Osilaja78/YuriBlog"
                                     desc="YuriBlog is a blogging website built with Django. Features include: admin user authentication,
                                     rich text edtior for admin to compose blog posts, and so on."
                                 />
@@ -104,7 +106,8 @@ export default function ProjectsPage() {
                             <div className="accordion">
                                 <ProjectsComponent
                                     name="Portfolio website V1"
-                                    img={mathEase}
+                                    img={portfolioV1}
+                                    ghUrl="https://github.com/Osilaja78/hameed-osilaja"
                                     desc="First version of my portfolio website."
                                 />
                                 <div className="projects-tag flex flex-wrap gap-2">
@@ -113,23 +116,6 @@ export default function ProjectsPage() {
                                     <Tag name="Portfolio" />
                                     <Tag name="GSAP" />
                                     <Tag name="ThreeJs" />
-                                </div>
-                            </div>
-                            <div className="accordion">
-                                <ProjectsComponent
-                                    name="DropSwift"
-                                    img={dropSwift}
-                                    ghUrl="https://github.com/Osilaja78/DropSwift"
-                                    desc="DropSwift is an E-commerce website where 
-                                    users can add products to cart, complete orders, update 
-                                    address. It has an Admin Interface."
-                                />
-                                <div className="projects-tag flex flex-wrap gap-2">
-                                    <Tag name="Fullstack" />
-                                    <Tag name="E-commerce" />
-                                    <Tag name="AWS" />
-                                    <Tag name="NextJs" />
-                                    <Tag name="FastAPI" />
                                 </div>
                             </div>
                         </div>

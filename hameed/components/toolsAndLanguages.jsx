@@ -142,7 +142,7 @@ export default function ToolsAndLanguagesComponent() {
         });    
 
     return (
-        <section className="w-[90vw] m-auto mt-20">
+        <section className="w-[90vw] m-auto my-20">
             <h1 className="text-[40px] text-center font-broken">Tools & Languages.</h1>
             <svg className="main1 h-[60vh] sm:h-[90vh] w-[100%] m-auto cursor-pointer">
                 <defs>
@@ -230,11 +230,20 @@ export default function ToolsAndLanguagesComponent() {
                     </g>
                 </g>
             </svg>
-            <p className="flex gap-5 max-w-[80%] m-auto">
-                <i>HTML</i>
-                <i>CSS</i>
-                <i>Jsvascript</i>
-                <i>Python</i>
+            <p className="flex flex-wrap gap-5 max-w-max m-auto text-gray-400 text-[14px]">
+                <i className="hover:text-white">HTML</i>
+                <i className="hover:text-white">CSS</i>
+                <i className="hover:text-white">JavaScript</i>
+                <i className="hover:text-white">Python</i>
+                <i className="hover:text-white">React.js</i>
+                <i className="hover:text-white">C</i>
+                <i className="hover:text-white">Django</i>
+                <i className="hover:text-white">Git</i>
+                <i className="hover:text-white">Next.js</i>
+                <i className="hover:text-white">Tailwind CSS</i>
+                <i className="hover:text-white">Bootstrap</i>
+                <i className="hover:text-white">NGINX</i>
+                <i className="hover:text-white">MySQL</i>
             </p>
         </section>
     )
